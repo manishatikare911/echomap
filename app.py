@@ -6,7 +6,7 @@ st.set_page_config(page_title="Customer Feedback Explorer", layout="wide")
 st.title("📄 Customer Feedback Keyword.")
 
 # 🚀 Upload CSV
-uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
+uploaded_file = st.file_uploader("Upload your CSV or Excel file", type=["csv", "xlsx", "xls"])
 
 # ⚡ Load and process data
 @st.cache_data
@@ -162,3 +162,4 @@ if uploaded_file:
         st.markdown("---")
         st.markdown("**Contact: Jayanth G**  \n📧 Email: [jayanth.g@flipkart.com](mailto:jayanth.g@flipkart.com)")
         st.markdown("**Contact: Manisha Tikare**  \n📧 Email: [hgs.46020@partner.flipkart.com](mailto:hgs.46020@partner.flipkart.com)")
+
